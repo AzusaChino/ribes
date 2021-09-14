@@ -1,4 +1,4 @@
-package ribes
+package pool
 
 import "time"
 
@@ -21,7 +21,7 @@ func (p *Pool) Execute(r Runnable) {
 	}
 
 	if WorkerCount(p) < p.corePoolSize {
-
+		r.run()
 	}
 }
 

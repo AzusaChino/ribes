@@ -1,4 +1,4 @@
-package ribes
+package pool
 
 type workingQueue struct {
 	works []Runnable
