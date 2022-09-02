@@ -8,6 +8,7 @@ import (
 
 const baseUrl = "https://yande.re/post/show"
 
+// Download By show Id from Yandere
 func DownloadByShowId(showId, targetDir string) {
 	// check exsits
 	pngName := fmt.Sprintf("%s.png", showId)
